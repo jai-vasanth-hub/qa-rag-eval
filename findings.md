@@ -24,3 +24,46 @@ Batch size: 50 chunks
 Wait time: 80s between batches
 Total ingestion time: ~13 minutes
 Key learning: Free tier needs careful rate limit handling
+
+## Observation 6 - LLM Free Tier Limits
+gemini-2.0-flash daily quota exhausted quickly on free tier
+Fix: Switch to gemini-1.5-flash or gemini-1.5-flash-8b
+Learning: Always have a fallback model strategy
+for free tier API usage
+
+## Observation 7 - Available Gemini Models (May 2026)
+Best model for free tier chatbot use: gemini-2.5-flash-lite
+Avoid: gemini-2.0-flash (daily quota exhausts quickly)
+Always run list_models() to check available models
+before hardcoding model names in code.
+
+## Observation 8 - First Chatbot Run Results
+Date: 30-05-2026
+Questions answered correctly: 2/4 (50%)
+Questions unanswered despite source existing: 2/4
+
+Failures:
+- "Seven testing principles" — sources found on pg 16,17
+  but answer not retrieved correctly
+- "Test oracle" — sources found but answer not retrieved
+
+Hypothesis: Chunk size 500 too small for multi-point answers
+Experiment planned: Increase k from 4 to 8, observe change
+
+This is exactly what RAG evaluation looks like in practice.
+
+## Experiment 1 — k=4 vs k=8 Results
+Date: 30-05-2026
+
+Result: Increasing k from 4 to 8 did NOT improve failed questions
+Observation: Page 17 retrieved 3 times for "seven principles"
+             — same chunks repeated, not new information
+
+Root cause hypothesis: Chunk size 500 too small
+The seven testing principles span multiple pages
+Each principle is in a separate chunk
+No single chunk has enough context to answer fully
+
+Next experiment: Rebuild vector DB with chunk_size=1000
+Expected outcome: Principles consolidated into fewer, richer chunks
+Risk: Larger chunks may hurt precision on narrow questions
