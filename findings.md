@@ -52,6 +52,15 @@ Experiment planned: Increase k from 4 to 8, observe change
 
 This is exactly what RAG evaluation looks like in practice.
 
+## Observation 9 - Custom Eval Framework Built
+Date: 05-06-2026
+Abandoned DeepEval due to version conflicts with LangChain 1.x
+Built custom evaluator using Gemini as judge LLM
+Metrics: Faithfulness + Relevancy scored 0.0 to 1.0
+Judge model: gemini-3.1-flash-lite
+Chatbot model: gemini-3.5-flash
+Awaiting quota reset for baseline run
+
 ## Experiment 1 — k=4 vs k=8 Results
 Date: 30-05-2026
 

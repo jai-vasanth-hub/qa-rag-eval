@@ -1,0 +1,93 @@
+{
+  "label": "chunk_size_500",
+  "timestamp": "2026-06-09T22:27:59.540724",
+  "summary": {
+    "total_questions": 8,
+    "avg_faithfulness": 0.0,
+    "avg_relevancy": 0.0,
+    "faithfulness_pass_rate": 0.0,
+    "relevancy_pass_rate": 0.0
+  },
+  "details": [
+    {
+      "question": "What is equivalence partitioning?",
+      "answer": "Equivalence Partitioning (EP) is a technique that divides data into partitions (known as equivalence partitions) based on the expectation that all the elements of a given partition are to be processed in the same way by the test object. The theory behind this technique is that if a test case that tests one value from an equivalence partition detects a defect, this defect should also be detected by test cases that test any other value from the same partition.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What are the seven testing principles?",
+      "answer": "I don't have enough information.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is the difference between verification and validation?",
+      "answer": "Verification is checking whether the system meets specified requirements, while validation is checking whether the system meets users\u2019 and other stakeholders\u2019 needs.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is a test oracle?",
+      "answer": "I don't have enough information.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is boundary value analysis?",
+      "answer": "Boundary Value Analysis (BVA) is a test technique based on exercising the boundaries of equivalence partitions. It focuses on the boundary values of partitions because developers are more likely to make errors with these values. BVA can only be used for ordered partitions, where the minimum and maximum values of a partition are its boundary values.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is the difference between static and dynamic testing?",
+      "answer": "The differences between static and dynamic testing include:\n\n*   **Execution:** Dynamic testing involves the execution of software, while static testing does not.\n*   **Work Products:** Static testing can be applied to non-executable work products, while dynamic testing can only be applied to executable work products.\n*   **Defect Detection:** Static testing finds defects directly, while dynamic testing causes failures from which the associated defects are determined through subsequent analysis.\n*   **Quality Characteristics:** Static testing can be used to measure quality characteristics that are not dependent on executing code (e.g., maintainability), while dynamic testing can be used to measure quality characteristics that are dependent on executing code (e.g., performance efficiency).\n*   **Accessibility:** Static testing may more easily detect defects that lay on paths through the code that are rarely executed or hard to reach using dynamic testing.\n*   **Methodology:** Static testing includes reviews and static analysis, while dynamic testing uses different types of test techniques and test approaches to derive test cases.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is a test plan?",
+      "answer": "A test plan describes the test objectives, resources, and processes for a test project. It documents the means and schedule for achieving test objectives and helps to ensure that the performed test activities will meet the established criteria.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    },
+    {
+      "question": "What is regression testing?",
+      "answer": "Regression testing confirms that no adverse consequences have been caused by a change, including regression tests on different test levels.",
+      "faithfulness_score": 0.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": false,
+      "relevancy_passed": false,
+      "faithfulness_reason": "Could not parse response",
+      "relevancy_reason": "Could not parse response"
+    }
+  ]
+}
