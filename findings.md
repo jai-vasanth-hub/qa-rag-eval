@@ -76,3 +76,18 @@ No single chunk has enough context to answer fully
 Next experiment: Rebuild vector DB with chunk_size=1000
 Expected outcome: Principles consolidated into fewer, richer chunks
 Risk: Larger chunks may hurt precision on narrow questions
+
+## Experiment 2 — chunk_size_500 vs chunk_size_1000
+Date: 10-06-2026
+
+Results:
+- Faithfulness: 1.0 → 1.0 (no change)
+- Relevancy: 0.75 → 0.875 (+12.5% improvement)
+- Relevancy pass rate: 75% → 87.5%
+- Failed questions reduced from 2 to 1
+
+Confirmed hypothesis: larger chunks improve relevancy
+for multi-point answers spanning multiple pages.
+
+Remaining failure: "test oracle" not in document at all.
+This is expected — correct chatbot behaviour.

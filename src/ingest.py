@@ -23,7 +23,7 @@ def load_pdf(path):
 def split_documents(pages):
     print("✂️ Splitting documents into chunks...")
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
+        chunk_size=1000,
         chunk_overlap=50
     )
     chunks = splitter.split_documents(pages)

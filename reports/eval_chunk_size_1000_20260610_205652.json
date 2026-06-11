@@ -1,0 +1,93 @@
+{
+  "label": "chunk_size_1000",
+  "timestamp": "2026-06-10T20:56:52.637045",
+  "summary": {
+    "total_questions": 8,
+    "avg_faithfulness": 1.0,
+    "avg_relevancy": 0.875,
+    "faithfulness_pass_rate": 100.0,
+    "relevancy_pass_rate": 87.5
+  },
+  "details": [
+    {
+      "question": "What is equivalence partitioning?",
+      "answer": "Equivalence Partitioning (EP) is a black-box test technique that divides data into partitions (known as equivalence partitions) based on the expectation that all the elements of a given partition are to be processed in the same way by the test object. The theory behind this technique is that if a test case that tests one value from an equivalence partition detects a defect, this defect should also be detected by test cases that test any other value from the same partition; therefore, one test for each partition is sufficient.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer accurately reflects the definition and theory of Equivalence Partitioning as provided in the context.",
+      "relevancy_reason": "The answer provides a clear, accurate, and direct definition of equivalence partitioning as a software testing technique."
+    },
+    {
+      "question": "What are the seven testing principles?",
+      "answer": "I don't have enough information. The provided context lists and describes only some of the seven testing principles (specifically principles 1, 5, 6, and 7), but it does not provide the complete list of all seven.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer is faithful because the provided context is indeed incomplete and does not contain all seven principles, making the claim that there is not enough information to list them all accurate.",
+      "relevancy_reason": "The answer is relevant because it directly addresses the question by explaining why it cannot provide the full list based on the provided context, demonstrating an understanding of the query's requirements."
+    },
+    {
+      "question": "What is the difference between verification and validation?",
+      "answer": "Verification is checking whether the system meets specified requirements, while validation is checking whether the system meets users\u2019 and other stakeholders\u2019 needs in its operational environment.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer accurately reflects the definitions of verification and validation provided in the context.",
+      "relevancy_reason": "The answer provides a clear, accurate, and direct definition of the difference between verification and validation."
+    },
+    {
+      "question": "What is a test oracle?",
+      "answer": "I don't have enough information.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 0.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": false,
+      "faithfulness_reason": "The provided context does not contain a definition or mention of a 'test oracle', therefore the answer correctly states that there is not enough information.",
+      "relevancy_reason": "The answer is a refusal to provide information rather than an attempt to answer the question, making it irrelevant to the query."
+    },
+    {
+      "question": "What is boundary value analysis?",
+      "answer": "Boundary Value Analysis (BVA) is a test technique based on exercising the boundaries of equivalence partitions. It can only be used for ordered partitions, where the minimum and maximum values of a partition are its boundary values. BVA focuses on these boundary values because developers are more likely to make errors with them, such as misplacing implemented boundaries or omitting them altogether.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer is entirely supported by the provided context, accurately summarizing the definition, constraints, and rationale for BVA.",
+      "relevancy_reason": "The answer provides a clear, accurate, and direct definition of boundary value analysis and explains its purpose in software testing."
+    },
+    {
+      "question": "What is the difference between static and dynamic testing?",
+      "answer": "The differences between static and dynamic testing include:\n\n*   **Execution:** Dynamic testing involves the execution of software, while static testing does not.\n*   **Defect Detection:** Static testing finds defects directly, while dynamic testing causes failures from which the associated defects are determined through subsequent analysis.\n*   **Work Products:** Static testing can be applied to non-executable work products, while dynamic testing can only be applied to executable work products.\n*   **Path Coverage:** Static testing may more easily detect defects that lie on paths through the code that are rarely executed or hard to reach using dynamic testing.\n*   **Quality Characteristics:** Static testing can be used to measure quality characteristics that are not dependent on executing code (e.g., maintainability), while dynamic testing can be used to measure quality characteristics that are dependent on executing code (e.g., performance efficiency).",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer is fully supported by the provided context. Each point corresponds directly to the bulleted list and descriptive text regarding the differences between static and dynamic testing found in the source material.",
+      "relevancy_reason": "The answer provides a clear, accurate, and comprehensive comparison between static and dynamic testing, directly addressing the question."
+    },
+    {
+      "question": "What is a test plan?",
+      "answer": "A test plan describes the test objectives, resources, and processes for a test project. It:\n\n*   Documents the means and schedule for achieving test objectives.\n*   Helps to ensure that the performed test activities will meet the established criteria.\n*   Serves as a means of communication with team members and other stakeholders.\n*   Demonstrates that testing will adhere to the existing test policy and test strategy (or explains why the testing will deviate from them).",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer is directly supported by the provided text, which explicitly defines a test plan and lists its functions using the exact wording found in section 5.1.1.",
+      "relevancy_reason": "The answer provides a clear, accurate, and direct definition of a test plan and its primary functions."
+    },
+    {
+      "question": "What is regression testing?",
+      "answer": "Regression testing confirms that no adverse consequences have been caused by a change, including a fix that has already been confirmation tested. These adverse consequences could affect the same component where the change was made, other components in the same system, or even other connected systems. Regression testing may not be restricted to the test object itself but can also be related to the environment.",
+      "faithfulness_score": 1.0,
+      "relevancy_score": 1.0,
+      "faithfulness_passed": true,
+      "relevancy_passed": true,
+      "faithfulness_reason": "The answer is entirely supported by the provided context, accurately synthesizing the definition and scope of regression testing as described in the text.",
+      "relevancy_reason": "The answer provides a clear, accurate, and comprehensive definition of regression testing."
+    }
+  ]
+}

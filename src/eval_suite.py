@@ -10,7 +10,7 @@ load_dotenv()
 
 # Constants
 CHROMA_DB_PATH = "db/chroma_db"
-CHUNK_SIZE_LABEL = "chunk_size_500"
+CHUNK_SIZE_LABEL = "chunk_size_1000"
 
 # Test cases
 TEST_CASES = [
