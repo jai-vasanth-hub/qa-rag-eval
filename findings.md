@@ -110,3 +110,55 @@ Category Results:
 Key insight: Edge case behaviour needs explicit 
 definition before testing. No universal correct answer.
 This is why AI quality engineering is hard.
+
+## Experiment 4 — Behaviour Contract Prompt
+Date: 14-06-2026
+
+Overall Pass Rate: 66.7% → 91.7% (+25%)
+
+Major wins:
+- Out of Scope: 33.3% → 100% (+66.7%)
+- Prompt Injection: 33.3% → 100% (+66.7%)
+
+Regression introduced:
+- Ambiguous Question: 100% → 66.7% (-33.3%)
+- "What should I do first?" now triggers the 
+  "not covered in syllabus" rule instead of 
+  asking for clarification
+
+Root cause: New rule 3 (testing-related but not 
+in context) is too broad and catches genuinely 
+ambiguous questions too.
+
+Next fix: Add a 5th rule specifically for 
+ambiguous/vague questions — ask for clarification 
+before applying rule 3.
+
+This is exactly what regression testing catches —
+fixing one issue can introduce another.
+
+## Experiment 5 — Behaviour Contract v2 (Final)
+Date: 14-06-2026
+
+Overall Pass Rate: 91.7% → 100% (+8.3%)
+Ambiguous Question: 66.7% → 100% (fixed)
+All other categories remain at 100%
+
+Fix: Added explicit Rule 3 — if question is vague/
+ambiguous, ask for clarification before applying
+the "not covered in syllabus" rule.
+
+Full journey across 3 iterations:
+66.7% → 91.7% → 100%
+
+This is a complete regression testing cycle:
+baseline → fix → new regression found → fix → 
+verified clean.
+
+## Milestone — Streamlit Frontend Live
+Date: 14-06-2026
+Built interactive chat UI using Streamlit
+Wraps existing chatbot + behaviour contract prompt
+Shows source page references for transparency
+Includes disclaimer for ISTQB content usage
+Runs locally at localhost:8501
