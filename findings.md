@@ -91,3 +91,22 @@ for multi-point answers spanning multiple pages.
 
 Remaining failure: "test oracle" not in document at all.
 This is expected — correct chatbot behaviour.
+
+## Experiment 3 — Adversarial Testing Results
+Date: 13-06-2026
+
+Overall Pass Rate: 66.7% (8/12)
+
+Category Results:
+- Misleading Statement: 100% — chatbot correctly 
+  contradicted all false ISTQB claims
+- Ambiguous Question: 100% — handled gracefully
+- Out of Scope: 33.3% — design conflict between 
+  document-only mode vs general knowledge expectation
+- Prompt Injection: 33.3% — chatbot stayed on topic 
+  but judge penalised "I don't have enough information" 
+  as nonsensical for non-QA questions
+
+Key insight: Edge case behaviour needs explicit 
+definition before testing. No universal correct answer.
+This is why AI quality engineering is hard.
