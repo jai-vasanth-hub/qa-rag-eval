@@ -193,33 +193,30 @@ qa-rag-eval/
 Built by [Jai Vasanth](https://www.linkedin.com/in/jai-vasanth/) — QA Automation Engineer transitioning into AI Quality Engineering. 8 years of QA experience applied to evaluating AI systems.
 
 Full build journey documented on [LinkedIn](https://www.linkedin.com/in/jai-vasanth/).
-<<<<<<< HEAD
 
 ## Architecture
 
-​```mermaid
+```mermaid
 graph LR
-    A[ISTQB PDF] --> B[Chunking]
-    B --> C[Gemini Embeddings]
-    C --> D[ChromaDB Vector Store]
-    D --> E[Retriever]
-    E --> F[Gemini Chat Model]
-    F --> G[Streamlit UI]
-    F --> H[Custom Eval Framework]
-    H --> I[Faithfulness Score]
-    H --> J[Relevancy Score]
-    H --> K[Adversarial Tests]
-​```
+A[ISTQB PDF] --> B[Chunking]
+B --> C[Gemini Embeddings]
+C --> D[ChromaDB Vector Store]
+D --> E[Retriever]
+E --> F[Gemini Chat Model]
+F --> G[Streamlit UI]
+F --> H[Custom Eval Framework]
+H --> I[Faithfulness Score]
+H --> J[Relevancy Score]
+H --> K[Adversarial Tests]
+```
 
 ## Improvement Journey
 
-​```mermaid
+```mermaid
 graph TD
-    A[Baseline: chunk_500] -->|Relevancy 0.75| B[chunk_1000]
-    B -->|Relevancy 0.875| C[Adversarial Baseline]
-    C -->|Pass Rate 66.7%| D[Behaviour Contract v1]
-    D -->|Pass Rate 91.7% - regression found| E[Behaviour Contract v2]
-    E -->|Pass Rate 100%| F[Live Streamlit App]
-​```
-=======
->>>>>>> c1c5f43ed601d279653563cf827a16889f4626ad
+A[Baseline: chunk_500] -->|Relevancy 0.75| B[chunk_1000]
+B -->|Relevancy 0.875| C[Adversarial Baseline]
+C -->|Pass Rate 66.7| D[Behaviour Contract v1]
+D -->|Pass Rate 91.7 - regression found| E[Behaviour Contract v2]
+E -->|Pass Rate 100| F[Live Streamlit App]
+```
