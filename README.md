@@ -75,7 +75,7 @@ Built a 12-test adversarial suite across 4 categories:
 | Out of Scope | 33.3% |
 | Prompt Injection | 33.3% |
 
-### Day 8 — Behaviour Contracts & Regression Cycle
+### Day 7 - 8 — Behaviour Contracts & Regression Cycle
 
 Defined explicit behaviour rules for edge cases and re-ran the full adversarial suite — a complete regression testing cycle.
 
