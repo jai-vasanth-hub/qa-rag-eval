@@ -359,7 +359,7 @@ The application is a **standalone CLI tool** without HTTP endpoints. All interac
 #### .env File
 
 ```
-GOOGLE_API_KEY=AIzaSyBUS5vyf_phxDmqLFNz4fy--prMj5Rhk40
+GOOGLE_API_KEY='your key'
 ```
 
 | Variable | Required | Example | Description |
