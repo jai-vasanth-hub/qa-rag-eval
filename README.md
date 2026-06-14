@@ -75,7 +75,7 @@ Built a 12-test adversarial suite across 4 categories:
 | Out of Scope | 33.3% |
 | Prompt Injection | 33.3% |
 
-### Day 8 — Behaviour Contracts & Regression Cycle
+### Day 7 - 8 — Behaviour Contracts & Regression Cycle
 
 Defined explicit behaviour rules for edge cases and re-ran the full adversarial suite — a complete regression testing cycle.
 
@@ -193,6 +193,7 @@ qa-rag-eval/
 Built by [Jai Vasanth](https://www.linkedin.com/in/jai-vasanth/) — QA Automation Engineer transitioning into AI Quality Engineering. 8 years of QA experience applied to evaluating AI systems.
 
 Full build journey documented on [LinkedIn](https://www.linkedin.com/in/jai-vasanth/).
+<<<<<<< HEAD
 
 ## Architecture
 
@@ -220,3 +221,5 @@ graph TD
     D -->|Pass Rate 91.7% - regression found| E[Behaviour Contract v2]
     E -->|Pass Rate 100%| F[Live Streamlit App]
 ​```
+=======
+>>>>>>> c1c5f43ed601d279653563cf827a16889f4626ad
