@@ -2,11 +2,15 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
+__import__('pysqlite3')
+import sys
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 
 load_dotenv()
 
 CHROMA_DB_PATH = "db/chroma_db"
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 st.set_page_config(
     page_title="QA Knowledge Assistant",
@@ -18,7 +22,7 @@ st.set_page_config(
 def load_vector_store():
     embeddings = GoogleGenerativeAIEmbeddings(
         model="models/gemini-embedding-001",
-        google_api_key=os.getenv("GOOGLE_API_KEY")
+        google_api_key=os.getenv("GOOGLE_API_KEY")or st.secrets.get("GOOGLE_API_KEY", "")
     )
     return Chroma(
         persist_directory=CHROMA_DB_PATH,
@@ -28,7 +32,7 @@ def load_vector_store():
 def get_answer(vectorstore, question):
     llm = ChatGoogleGenerativeAI(
         model="gemini-3.1-flash-lite",
-        google_api_key=os.getenv("GOOGLE_API_KEY"),
+        google_api_key=os.getenv("GOOGLE_API_KEY")or st.secrets.get("GOOGLE_API_KEY", ""),
         temperature=0.1
     )
     retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
