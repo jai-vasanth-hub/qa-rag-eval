@@ -220,3 +220,6 @@ C -->|Pass Rate 66.7| D[Behaviour Contract v1]
 D -->|Pass Rate 91.7 - regression found| E[Behaviour Contract v2]
 E -->|Pass Rate 100| F[Live Streamlit App]
 ```
+
+### Live Demo
+👉 [Try it here](https://app-rag-eval.streamlit.app)
